@@ -1,37 +1,37 @@
 # Unity SW Pack
-> 이 확장은 VS Code용 Unity 개발환경을 제공합니다.
+> This extension provides a Unity development environment for VS Code.
 
-## 사전 준비
+## Preliminaries
 
-* 런타임 및 닷넷 명령이 포함된 [.NET SDK](https://dotnet.microsoft.com/ko-kr/download)를 설치
-* [Windows만 해당] Windows를 다시 시작하여 %PATH%에 대한 변경 사항을 적용
-* [macOS만 해당] "일부 프로젝트를 로드하는 데 문제가 있습니다. 자세한 내용은 출력을 검토하세요."라는 메시지가 표시되지 않도록 하려면 최신 [Mono](https://www.mono-project.com/download/stable/#download-mac) 릴리즈를 설치
+* Install [.NET SDK](https://dotnet.microsoft.com/en-us/download) which includes runtime and .NET commands
+* [Windows only] Restart Windows for changes to %PATH% to take effect
+* [macOS only] To avoid "There was a problem loading some projects. Review the output for more information." download/stable/#download-mac) install the release
 
-### Visual Studio용 빌드 도구 설치 (Windows만 해당)
+### Install Build Tools for Visual Studio (Windows only)
 
-C# 확장 프로그램은 더 이상 Microsoft 빌드 도구와 함께 제공되지 않으므로 수동으로 설치해야 합니다.
-* [Visual Studio 2022용 빌드 도구](https://visualstudio.microsoft.com/ko/downloads/)를 다운로드합니다.
-* .NET 데스크톱 빌드 도구 워크로드를 설치합니다. 다른 구성 요소는 필요하지 않습니다.
+C# extensions are no longer shipped with the Microsoft Build Tools and must be installed manually.
+* Download [Build Tools for Visual Studio 2022](https://visualstudio.microsoft.com/en/downloads/).
+* Install the .NET Desktop Build Tools workload. No other components are required.
 
-## 주요 기능
+## Main function
 
-* Unity를 위한 코드 스니펫을 한국어로 제공합니다.
+* Code snippets for Unity are provided in Korean.
 ![CodeSnippets](gifs/01.gif)
-* [ON/OFF] Unity 스크립트가 참조하고 있는 Scene, Prefab을 보여줍니다.
+* [ON/OFF] Shows Scene and Prefab referenced by Unity script.
 ![UsageScenePrefab](gifs/02.gif)
-* [ON/OFF] Unity 이벤트 함수를 표기합니다.
+* [ON/OFF] Indicates Unity event function.
 ![UnityEventMessage](gifs/03.gif)
-* [ON/OFF] Unity 메시지에 대한 설명를 Hover로 보여줍니다.
+* [ON/OFF] Displays explanations of Unity messages on Hover.
 ![Hover](gifs/04.gif)
-* [ON/OFF] void-IEnumerator 간의 함수 시그니처 변경(타입 토글)을 제공합니다.
+* [ON/OFF] Provide function signature change (type toggle) between void-IEnumerator.
 ![TypeToggle](gifs/05.gif)
-* [ON/OFF] .meta 파일의 변경사항을 검사하여 변경점이 있으면 동기화합니다.
+* [ON/OFF] Checks for changes in .meta files and syncs them if there are any.
 ![metaFile](gifs/06.gif)
-* [ON/OFF] Unity 메시지에 대한 문서 탐색을 제공합니다. (단축키: Shift+1)
-* [ON/OFF] Unity SW Pack Dark Theme을 제공합니다.
-* Unity 개발을 위해 C# Extension의 `"omnisharp.useModernNet": false` 처리합니다.
+* [ON/OFF] Provides documentation navigation for Unity messages. (Shortcut: Shift+1)
+* [ON/OFF] Unity SW Pack Dark Theme is provided.
+* Handle `"omnisharp.useModernNet": false` of C# Extension for Unity development.
 
-## 제공되는 코드 스니펫
+## Provided code snippet
 * Game classes:
 	* `MonoBehaviour`
 	* `NetworkBehaviour`
